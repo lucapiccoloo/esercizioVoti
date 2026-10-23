@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Il registro dei voti</title>
+  <style>
+    #immagine {
+      display: none;
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Il registro dei voti</h1>
+
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome">
+
+  <label for="voto">Voto (1-10):</label>
+  <input type="text" id="voto" maxlength="2">
+
+  <button id="registra">Registra</button>
+
+  <p id="messaggio"></p>
+
+  <img id="immagine" src="" alt="">
+
+  <ul id="elenco"></ul>
+
+  <table id="riepilogo">
+    <tr>
+      <th>Giudizio</th>
+      <th>Numero</th>
+    </tr>
+    <tr>
+      <td>Insufficiente</td>
+      <td id="conta-insufficiente">0</td>
+    </tr>
+    <tr>
+      <td>Sufficiente</td>
+      <td id="conta-sufficiente">0</td>
+    </tr>
+    <tr>
+      <td>Buono</td>
+      <td id="conta-buono">0</td>
+    </tr>
+    <tr>
+      <td>Ottimo</td>
+      <td id="conta-ottimo">0</td>
+    </tr>
+  </table>
+
+  <script src="dist/script.js"></script>
+</body>
+</html>
